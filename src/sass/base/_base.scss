@@ -6,6 +6,12 @@
 
 html {
     font-size: 62.5%;
+    @include breakpoints($mobileBig) {
+        font-size: 58%;
+    }
+    @include breakpoints($mobileSmall) {
+        font-size: 55%;
+    }
 }
 
 img {

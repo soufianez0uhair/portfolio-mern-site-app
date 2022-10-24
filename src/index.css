@@ -28,6 +28,12 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 640px) {
+    html {
+      font-size: 58%; } }
+  @media (max-width: 400px) {
+    html {
+      font-size: 55%; } }
 
 img {
   width: 100%; }
@@ -48,6 +54,9 @@ body {
   position: relative;
   width: 40rem;
   animation: rightToLeft 1s ease-in; }
+  @media (max-width: 870px) {
+    .miyamoto {
+      width: 30rem; } }
 
 .loader {
   width: 20rem;
@@ -56,11 +65,24 @@ body {
 .project {
   display: flex;
   gap: 10rem;
-  margin-bottom: 7rem;
+  margin-bottom: 15rem;
   animation: fadeOut .2s ease-in; }
+  @media (max-width: 870px) {
+    .project {
+      flex-direction: column;
+      align-items: center; } }
+  @media (max-width: 400px) {
+    .project {
+      margin-bottom: 5rem; } }
   .project__imgs {
     position: relative;
     width: 50rem; }
+    @media (max-width: 640px) {
+      .project__imgs {
+        width: 38rem; } }
+    @media (max-width: 400px) {
+      .project__imgs {
+        width: 30rem; } }
     .project__imgs__desktop {
       border-radius: 1rem;
       border: 0.1rem solid #023047;
@@ -73,6 +95,10 @@ body {
       border-radius: 1rem;
       border: 0.1rem solid #023047;
       box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.1); }
+      @media (max-width: 400px) {
+        .project__imgs__mobile {
+          width: 9rem;
+          right: -4.5rem; } }
   .project__details {
     display: flex;
     flex-direction: column;
@@ -153,7 +179,16 @@ body {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  gap: 1rem;
   animation: fadeOut .5s ease-in; }
+  @media (max-width: 870px) {
+    .home {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; } }
+  @media (max-width: 870px) {
+    .home__about-me {
+      order: 2; } }
   .home__about-me p {
     font-size: 1.8rem;
     margin-bottom: 1rem; }
@@ -175,6 +210,9 @@ body {
     display: flex;
     gap: 1rem;
     align-items: center; }
+    @media (max-width: 400px) {
+      .home__about-me__cool-animations {
+        gap: 0; } }
     .home__about-me__cool-animations .mernImg {
       width: 15rem; }
 

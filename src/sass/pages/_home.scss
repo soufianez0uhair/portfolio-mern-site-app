@@ -2,8 +2,17 @@
     display: flex;
     justify-content: center;
     padding: 2rem;
+    gap: 1rem;
     animation: fadeOut .5s ease-in;
+    @include breakpoints($tablet) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
     &__about-me {
+        @include breakpoints($tablet) {
+            order: 2;
+        }
         p {
             font-size: 1.8rem;
             margin-bottom: 1rem;
@@ -31,6 +40,9 @@
             display: flex;
             gap: 1rem;
             align-items: center;
+            @include breakpoints($mobileSmall) {
+                gap: 0;
+            }
             .mernImg {
                 width: 15rem;
             }

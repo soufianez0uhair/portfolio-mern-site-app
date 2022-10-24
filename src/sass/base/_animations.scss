@@ -1,0 +1,30 @@
+@keyframes rightToLeft {
+    0% {
+        opacity: 0;
+        right: -60rem;
+    }
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        position: relative;
+        left: 0;
+    }
+    100% {
+        transform: scale(1.5);
+        left: 15rem;
+    }
+}

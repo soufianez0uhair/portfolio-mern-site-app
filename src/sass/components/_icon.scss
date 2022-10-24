@@ -1,0 +1,11 @@
+.icon {
+    &--contact {
+        font-size: 3rem;
+    }
+    &--github {
+        font-size: 2rem;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

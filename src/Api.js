@@ -1,1 +1,1 @@
-export const PROJECTS_API = 'https://portfolio-site-api.onrender.com';
+export const PROJECTS_API = 'https://portfolio-site-api.onrender.com/api/v1/projects';
